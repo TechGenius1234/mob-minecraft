@@ -1,11 +1,16 @@
-<DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATC Streams</title>
   <style>
-    body{
-  font-family:'Times New Roman', serif;
-  text-shadow: rgba(0,0,0,.01) 0 0 1px;
-  color:#000;
-  background:#BEA451;
-}
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
   a:link, a:visited {
   background-color: #f44336;
   color: white;
@@ -14,81 +19,82 @@
   text-decoration: none;
   display: inline-block;
 }
-a:hover, a:active {
+
+  a:hover, a:active {
   background-color: red;
-.text-centre{
-  text-align:center;
 }
-.body-wrapper{
-  max-width:1000px;
-  margin:0 auto;
-}
-.picheader{
-  height:250px;
-  overflow:hidden;
-}
-header nav{
-  background:#000;
-  color:#fff;
-  overflow:hidden;
-  padding:10px auto;
-}
-header nav ul{
-  list-style:none;
-  overflow:hidden;
-}
-header nav ul li{
-  float:left;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-header nav ul li a{
-  color:#fff;
-  font-size:1.2em
-}
-article{
-  margin: 5px;
-  padding: 5px 0;
-  border: solid 1px #000;
-  overflow: hidden;
-  padding-top: 0px;
-  background:#fff;
-}
-.title{
-  background: #000;
-  color: #fff;
-  padding: 5px;
-  padding-left: 10px;
-  overflow: hidden;
-	margin: 0;
-  font-weight:bolder;
-}
-article p, article h1,article h2, article h3, article h4{
-  padding:0 15px;
-}
-main{
-  float:left;
-  max-width: 68%;
-}
-aside{
-  float:right;
-	max-width: 32%;
-}
-footer{
-	width: 100%;
-	float: left;
-}
+    header {
+      background-color: #2a3d66;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .stream-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+    .stream-card:hover {
+      transform: scale(1.05);
+    }
+    .stream-card .info {
+      padding: 15px;
+    }
+    .stream-card .info h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+      color: #333;
+    }
+    .stream-card .info audio {
+      width: 100%;
+      height: 50px;
+      border: none;
+    }
+    .fire-alert {
+      background-color: #d9534f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    .more-streams {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 1.2em;
+      color: #333;
+      padding: 15px;
+      background-color: #2a3d66;
+      color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .more-streams:hover {
+      background-color: #1c2a46;
+    }
   </style>
-  <head>
-    <title>Noice</title>
-  </head>
-  <body>
-    <div class="body-wrapper">
-    <article>
-	    <h1>Saves</h1>
-	    <a href=https://github.com/TechGenius1234/mob-minecraft/releases/tag/V1.0.0>The first version</a>
-	    <a href=https://github.com/TechGenius1234/mob-minecraft/releases/tag/Pre-Releases>Pre release of V1.0.1</a>
-	    <a href=https://github.com/TechGenius1234/mob-minecraft/releases/tag/V1.0.1>Final Version</a>
-    </article>
-</div>
-  </body>
+</head>
+<body>
+
+  <header>
+    <h1>Day 2 of Gearing Up</h1>
+  </header>
+  <div class="container">
+    <div class=stream-card>
+	    <h1>First Version</h1>
+	    <a href="https://github.com/TechGenius1234/mob-minecraft/releases/tag/V1.0.0" target="_blank">This is a link</a>
+    </div>
+  </div>
+</body>
+</html>
